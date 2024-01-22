@@ -38,7 +38,10 @@ router.post('/candidateAdd', (req, res, next) => {
           res.sendFile(path.join(__dirname+'/../views/thankYou.html'));
         }
       });
-  });
+    }).catch(err => {
+      console.error(err);
+      res.status(500).send('Internal Server Error: ' + err.message);
+    });
 });
 
 /* Old route, no longer implemented
