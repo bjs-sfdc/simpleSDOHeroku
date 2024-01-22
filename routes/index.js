@@ -66,3 +66,4 @@ router.post('/newsletterAdd', function(req, res, next){
 */
 
 module.exports = router;
+
