@@ -60,7 +60,7 @@ describe('/candidateAdd route', () => {
   
     beforeEach(() => {
       app = express();
-      app.use(express.static(path.join(__dirname, 'path_to_your_static_files'))); // Adjust path as necessary
+      app.use(express.static(path.join(__dirname, '../public/assets/'))); // Adjust path as necessary
       app.use(router);
     });
   
