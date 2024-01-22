@@ -41,6 +41,8 @@ router.post('/candidateAdd', (req, res, next) => {
   });
 });
 
+/* Old route, no longer implemented
+
 router.post('/newsletterAdd', function(req, res, next){
   //lets just save it into lead
   pg.connect(conString, function(err, client, done){
@@ -61,6 +63,6 @@ router.post('/newsletterAdd', function(req, res, next){
   });
 });
 
-
+*/
 
 module.exports = router;
