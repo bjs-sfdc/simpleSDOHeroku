@@ -1,4 +1,3 @@
-// index.test.js
 const express = require('express');
 const request = require('supertest');
 const path = require('path');
@@ -60,7 +59,7 @@ describe('/candidateAdd route', () => {
   
     beforeEach(() => {
       app = express();
-      app.use(express.static(path.join(__dirname, '../public/assets/'))); // Adjust path as necessary
+      app.use(express.urlencoded({ extended: true })); // Use this for form data
       app.use(router);
     });
   
